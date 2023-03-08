@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-css-tags */
 import Document, {
   Html,
   Head,
@@ -13,7 +12,6 @@ export default class MyDocument extends Document {
       ...initialProps,
       styles: (
         <>
-          <link rel="stylesheet" href="/antd.min.css" />
           {initialProps.styles}
         </>
       ),
