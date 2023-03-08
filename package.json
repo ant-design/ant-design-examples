@@ -7,7 +7,8 @@
     "build": "npm run genStaticAntdCss && next build",
     "start": "next start",
     "lint": "next lint",
-    "genStaticAntdCss": "node ./scripts/genAntdCss.mjs"
+    "genStaticAntdCss": "node ./scripts/genAntdCss.mjs",
+    "prepare": "npm run genStaticAntdCss"
   },
   "devDependencies": {
     "@ant-design/cssinjs": "^1.3.0",
