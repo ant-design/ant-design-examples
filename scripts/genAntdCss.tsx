@@ -1,7 +1,6 @@
 import fs from "fs";
 import { extractStyle } from "@ant-design/static-style-extract";
-import { ConfigProvider } from "antd";
-import React from "react";
+import withTheme from "../pages/theme";
 
 const outputPath = "./public/antd.min.css";
 
@@ -11,42 +10,7 @@ const outputPath = "./public/antd.min.css";
 
 // 2. With custom theme
 
-const testGreenColor = "#008000";
-const testRedColor = "#ff0000";
-
-const css = extractStyle((node) => (
-  <>
-    <ConfigProvider
-      theme={{
-        hashed: false,
-        token: {
-          colorBgBase: testGreenColor,
-        },
-      }}
-    >
-      {node}
-    </ConfigProvider>
-    <ConfigProvider
-      theme={{
-        hashed: false,
-        token: {
-          colorPrimary: testGreenColor,
-        },
-      }}
-    >
-      <ConfigProvider
-        theme={{
-          hashed: false,
-          token: {
-            colorBgBase: testRedColor,
-          },
-        }}
-      >
-        {node}
-      </ConfigProvider>
-    </ConfigProvider>
-  </>
-));
+const css = extractStyle(withTheme);
 
 fs.writeFileSync(outputPath, css);
 
