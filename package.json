@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "devDependencies": {
-    "@ant-design/cssinjs": "^1.3.0",
+    "@ant-design/cssinjs": "^1.8.1",
     "@ant-design/static-style-extract": "~1.0.1",
     "@next/font": "^13.1.1",
     "@types/node": "^18.11.17",
