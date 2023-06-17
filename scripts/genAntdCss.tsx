@@ -23,7 +23,10 @@ export function doExtraStyle({
   }
 
   const css = extractStyle(cache, true);
-  if (!css) return "";
+  if (!css) return {
+    url: "",
+    fallback: "",
+  };
 
   const md5 = createHash("md5");
   const hash = md5.update(css).digest("hex");
@@ -31,10 +34,17 @@ export function doExtraStyle({
   const fullpath = path.join(outputCssPath, fileName);
 
   const res = `_next/static/css/${dir}/${fileName}`;
+  const resFallback = `api/loadCss?fileName=${fileName}&etag=${hash}`;
 
-  if (fs.existsSync(fullpath)) return res;
+  if (fs.existsSync(fullpath)) return {
+    url: res,
+    fallback: resFallback,
+  };
 
   fs.writeFileSync(fullpath, css);
 
-  return res;
+  return {
+    url: res,
+    fallback: resFallback,
+  };
 }
