@@ -13,7 +13,6 @@ import {
   Space,
   Divider,
 } from 'antd';
-import { AntdStyle } from './AntDesignStyle';
 import withTheme from '../../theme';
 
 const { Option } = Select;
@@ -80,11 +79,7 @@ const Home = function Home() {
 }
 
 const HomePage = () => {
-  return (
-    <AntdStyle>
-      {withTheme(<Home />)}
-    </AntdStyle>
-  );
+  return withTheme(<Home />);
 }
 
 export default HomePage;

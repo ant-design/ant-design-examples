@@ -1,3 +1,4 @@
+import StyledComponentsRegistry from '../lib/registry'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   )
