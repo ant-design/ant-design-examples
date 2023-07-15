@@ -12,11 +12,13 @@ export default function StyledComponentsRegistry({
 }) {
     const cache = createCache();
 
-    useServerInsertedHTML(() => {
-        return <>
-            <style id="antd" dangerouslySetInnerHTML={{ __html: extractStyle(cache, true) }}></style>
-        </>
-    })
+    useServerInsertedHTML(() => (
+        <style
+            id="antd"
+            dangerouslySetInnerHTML={{ __html: extractStyle(cache, true) }}
+        >
+        </style>
+    ));
 
     return (
         <StyleProvider cache={cache}>
