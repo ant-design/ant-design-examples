@@ -1,3 +1,10 @@
+// Since the current page uses sub-components, 
+// the use of sub-components in non-client components 
+// is not currently supported in the app router mode of next.js. 
+// So we need to add "use client"; 
+// Markers. If the component you use in your page does not contain sub-components such as Select.Option, 
+// you do not need to add this tag to the page.
+// More about without sub-components example see: src/app/withoutSubComponents/page.tsx
 "use client";
 
 import {
