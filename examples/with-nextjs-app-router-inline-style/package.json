@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.18.2",
     "@ant-design/nextjs-registry": "^1.0.0",
     "antd": "^5.12.5",
     "eslint": "^8.56.0",
