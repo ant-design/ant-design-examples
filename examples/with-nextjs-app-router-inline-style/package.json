@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.0.0",
-    "antd": "^5.12.5",
+    "antd": "5.17.0",
     "eslint": "^8.56.0",
     "eslint-config-next": "^13.4.8",
     "next": "^14.0.4",
@@ -22,5 +22,8 @@
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6"
+  },
+  "resolutions": {
+    "@rc-component/async-validator": "5.0.2"
   }
 }
