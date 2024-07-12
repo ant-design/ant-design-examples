@@ -61,7 +61,7 @@ function App() {
               icon={<AntDesignOutlined />}
               onClick={
                 () => window.open(
-                  'https://github/ant-design/ant-design',
+                  'https://github.com/ant-design/ant-design',
                   '_blank',
                 )
               }
