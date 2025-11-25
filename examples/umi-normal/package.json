@@ -9,8 +9,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "antd": "^5.19.2",
-    "umi": "^4.3.6"
+    "antd": "^6.0.0",
+    "umi": "^4.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
