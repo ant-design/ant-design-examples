@@ -1,13 +1,13 @@
+import { Skeleton } from 'antd'
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import 'normalize.css'
-import 'antd/dist/reset.css'
-import { Skeleton } from 'antd'
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
+import routes from '~react-pages'
+import NProgress from './Nprogress'
 
 import Provider from './Privader'
-import NProgress from './Nprogress'
-import routes from '~react-pages'
+import 'normalize.css'
+import 'antd/dist/reset.css'
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {

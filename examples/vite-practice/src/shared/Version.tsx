@@ -1,6 +1,6 @@
-import React, { version as reactVersion } from 'react'
-import { ConfigProvider, Typography, version as antdVersion, theme, version } from 'antd'
+import { version as antdVersion, ConfigProvider, theme, Typography, version } from 'antd'
 import { useAntdToken } from 'antd-style'
+import React, { version as reactVersion } from 'react'
 
 export interface VersionProps {
   type?: 'antd' | 'react'

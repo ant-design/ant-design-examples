@@ -1,9 +1,9 @@
+import type { VersionProps } from '@/shared/Version'
+import { PlusOutlined } from '@ant-design/icons'
 import { Flex, Tooltip } from 'antd'
 import { createStyles } from 'antd-style'
-import { PlusOutlined } from '@ant-design/icons'
-import reactSVG from '@/assets/react.svg'
 import antSVG from '@/assets/antd.svg'
-import type { VersionProps } from '@/shared/Version'
+import reactSVG from '@/assets/react.svg'
 import Version from '@/shared/Version'
 
 const useStyle = createStyles(
