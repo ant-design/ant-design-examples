@@ -1,6 +1,6 @@
-import * as React from 'react'
 import { App } from 'antd'
-import { ThemeProvider, createGlobalStyle } from 'antd-style'
+import { createGlobalStyle, ThemeProvider } from 'antd-style'
+import * as React from 'react'
 
 const GlobalStyle = createGlobalStyle`
   html, body {

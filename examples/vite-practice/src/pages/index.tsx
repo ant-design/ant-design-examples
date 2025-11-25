@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { AntDesignOutlined, GithubFilled, PlusOutlined } from '@ant-design/icons'
 import { Button, Divider, Flex, Space, Statistic, Tooltip, Typography } from 'antd'
 import { createStyles } from 'antd-style'
-import { AntDesignOutlined, GithubFilled, PlusOutlined } from '@ant-design/icons'
-import Version from '@/shared/Version'
+import { useState } from 'react'
 import Brands from '@/shared/Brands'
+import Version from '@/shared/Version'
 
 const useStyle = createStyles(
   ({ token }) => ({
